@@ -16,12 +16,12 @@
 
 Советую округлить значение после рассчетов, так как в некоторых случаях может получиться "длинная дробь". */
 
-const temperature = Number.parseFloat(prompt("Введите температуру в градусах Цельсия:"));
+const celsius = Number.parseFloat(prompt("Введите температуру в градусах Цельсия:"));
 
-alert(`Градусы Цельсия ${temperature}\nГрадусы Фаренгейта ${tempFarengate(temperature)}`);
+alert(`Градусы Цельсия ${celsius}\nГрадусы Фаренгейта ${tempFarengate(celsius).toFixed(2)}`);
 
 
-function tempFarengate(temperature) {
-    const tempF = (9 / 5) * temperature + 32;
-    return +tempF.toFixed(2);
+function tempFarengate(celsius) {
+    const tempF = (9 / 5) * celsius + 32;
+    return tempF;
 }

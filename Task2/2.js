@@ -11,5 +11,5 @@ const userName = prompt('Введите ваше имя:');
 greeting(userName);
 
 function greeting(userName) {
-    return console.log(`Hello, ${userName}!`);
+    console.log(`Hello, ${userName}!`);
 }
